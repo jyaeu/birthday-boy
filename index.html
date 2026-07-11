@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JETHRO MY BABY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Baloo+2:wght@400;600;700&family=Caveat:wght@500;700&family=Great+Vibes&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-transition-overlay" aria-hidden="true"></div>
+    <div class="transition-heart-layer" aria-hidden="true">
+      <span class="transition-heart heart-1"></span>
+      <span class="transition-heart heart-2"></span>
+      <span class="transition-heart heart-3"></span>
+      <span class="transition-heart heart-4"></span>
+      <span class="transition-heart heart-5"></span>
+      <span class="transition-heart heart-6"></span>
+    </div>
+    <main class="page-shell">
+      <section class="hero card">
+        <div class="hearts-scene" aria-hidden="true">
+          <img src="images/cute-bear.jpg" alt="cute bear" class="floating-image floating-left" />
+          <img src="images/id.jfif" alt="id" class="floating-image floating-id" />
+          <img src="images/cat.jfif" alt="cat" class="floating-image floating-cat" />
+          <img src="images/us.jpg" alt="us" class="floating-image floating-right" />
+          <span class="pixel-heart heart-1"></span>
+          <span class="pixel-heart heart-2"></span>
+          <span class="pixel-heart heart-3"></span>
+          <span class="pixel-heart heart-4"></span>
+        </div>
+        <p class="eyebrow">i love you so much babyy</p>
+        <h1 class="pixel-title">HAPPY BIRTHDAY BABYYYY MWAHHHHH :3</h1>
+        <p class="subtext">my favorite nickname hehe</p>
+
+        <form id="passwordForm" class="password-form">
+          <label class="sr-only" for="passwordInput">Password</label>
+          <input
+            id="passwordInput"
+            type="text"
+            placeholder="type the secret"
+            autocomplete="off"
+          />
+          <button type="submit">Unlock</button>
+        </form>
+        <p id="hintText" class="hint">Hint: starts with m</p>
+        <p id="message" class="message" aria-live="polite"></p>
+      </section>
+
+      <div id="contentStage" class="content-stage">
+        <section id="envelopeSection" class="card hidden">
+          <h2>Slide to open the envelope</h2>
+          <div id="envelope" class="envelope" tabindex="0" role="button" aria-label="Open envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body">
+              <span>Open me</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="essaySection" class="card hidden">
+          <h2>A little note from me</h2>
+          <div class="essay" id="essayText">
+            <p>
+              You make ordinary days feel bright, and even the quietest moments feel full of meaning.
+              I love the way you laugh, the way you care, and the way you make love feel safe and sweet.
+              Thank you for being my favorite person, my safest place, and the reason I smile so easily.
+              I hope this birthday feels as beautiful as you are.
+            </p>
+          </div>
+        </section>
+
+        <section id="quizSection" class="card hidden">
+          <h2>One last little game</h2>
+          <p class="quiz-question" data-answer="B">Which one is your favorite thing about us?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-choice="A">The snacks</button>
+            <button class="quiz-option" data-choice="B">How easy it is to feel at home with you</button>
+            <button class="quiz-option" data-choice="C">The dramatic entrances</button>
+          </div>
+          <p id="quizFeedback" class="quiz-feedback"></p>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
